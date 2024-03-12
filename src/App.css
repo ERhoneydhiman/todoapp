@@ -3,5 +3,82 @@
   padding: 0;
 }
 .App{
+  width: 100%;
+  height: 100vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 50, 66);
+}
+.main{
+  width: 70%;
+  height: 60vh;
+  background-color: rgb(215, 211, 142);
+  border: 5px solid white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px rgb(255, 255, 255);
+}
+.main h1{
+  color: rgb(9, 9, 47);
+  margin: 2vh 0;
+  text-decoration: underline;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 2vw;
+}
+#input{
+  border: none;
+  width: 50%;
+  height: 6vh;
+  border-radius: 30px;
+  padding: 0 3vw ;
+  font-size: 1.7rem;
+  color: aliceblue;
+  background-color: rgb(43, 50, 66);
+}
+#input:focus {
+  outline: none;
+}
+#btn1{
+  background-color: rgb(7, 10, 15);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 30px;
+  border: 3px solid white;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#one{
+  background-color: rgb(220, 136, 33);
+  margin: 6px;
+  width: 75%;
+  height: 5vh;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+li{
+  list-style-type: none;
+}
+#btn2{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  background-color: rgb(7, 10, 15);
+  color: white;
 }

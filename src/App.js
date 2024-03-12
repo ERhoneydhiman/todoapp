@@ -13,7 +13,7 @@ function App() {
     if (task.trim() !== "") {
       setList([...list, task])
     }
-   
+
     setTask("");
   }
 
@@ -26,7 +26,7 @@ function App() {
     });
   }
 
- 
+
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -36,28 +36,30 @@ function App() {
 
   return (
     <div className="App">
-      <h1>To Do Tasks</h1>
-      <div className='input-box'>
-        <input
-          id='input'
-          name='input'
-          type="text"
-          placeholder='Add Task...'
-          value={task}
-          onChange={(e) => handleTask(e)}
-          onKeyDown={(e) => handleKeyPress(e)}
-        />
-        <button onClick={handleTodo}>Add Task</button>
-      </div>
-      <div className="list">
-        {list.map((item, i) => <li
-          key={i}>
-            
-          <span>
-            {item}
-          </span>
-          <button onClick={() => handleDelete(i)}>D</button>
-        </li>)}
+      <div className="main">
+        <h1>To Do Tasks</h1>
+        <div className='input-box'>
+          <input
+            id='input'
+            name='input'
+            type="text"
+            placeholder='Add Task...'
+            value={task}
+            onChange={(e) => handleTask(e)}
+            onKeyDown={(e) => handleKeyPress(e)}
+          />
+          <button id='btn1' onClick={handleTodo}>Add Task</button>
+        </div>
+        <div className="list">
+          {list.map((item, i) => <li
+            key={i} id='one'>
+
+            <span>
+              {item}
+            </span>
+            <button id='btn2' onClick={() => handleDelete(i)}>D</button>
+          </li>)}
+        </div>
       </div>
     </div>
   );
